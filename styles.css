@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+
+/* Basic for all website */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-button-color:#ff4949 ;
+    --primary-text-color:#3bae38;
+    --secondary-text-color:#fe563e;
+    --accent-color:#ff4b47;
+    --accent-color-dark:#21dcfd;
+    --padding-inline-section:20px;
+    --primary-write-color:#184d5b;
+    --secondary-write-color:#144864;
+
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    color: var(--primary-write-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 1.18rem;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.23rem;
+    line-height: 1.8rem;
+    color: var(--secondary-write-color);
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+
+/* utility class */
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.small-bold-text{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+.hover-links{
+    color: var(--primary-write-color);
+    transition: 0.2s ease-out;
+}
+.hover-links:hover{
+    color: var(--accent-color-dark);
+}
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+    color: white !important;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+    box-shadow: 0 0 2px var(--secondary-word-color);
+}
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+    color: var(--primary-button-color) !important;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border-color: var(--accent-color-dark);
+    color: var(--accent-color-dark) !important;
+}
+
+
+
+/* top banner */
+.top-banner{
+    background-color: #e54439;
+    background-image: url('./Images/asset\ 30.png') ;
+    background-size: 300px;
+}
+
+
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+
+/* navbar */
+
+.main{
+    margin-top: 25px;
+    justify-content: space-between;
+}
+.left img{
+    width: 110px;
+}
+.right{
+    flex-basis: 730px;
+}
+.right ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+
+/* header */
+header{
+    padding: 60px var(--padding-inline-section);
+}
+.header-section{
+    justify-content: center;
+    gap: 90px;
+}
+
+
+.hleft{
+    max-width: 40vw;
+}
+.hleft h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.gsb{
+    margin-top: 20px;
+}
+.hright img{
+    width: 420px;
+    animation: avi 2.5s ease-in 0s infinite alternate ;
+}
+@keyframes avi{
+    from{
+        width: 85%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+
+/* <!-- companies-section --> */
+.companies-header{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-write-color);
+}
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    height: 45px;
+}
+
+
+/* feature-section */
+.feature{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(./Images/asset\ 32.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+}
+.feature-header{
+    text-align: center;
+}
+.feature-header h2{
+    margin-bottom: 20px;
+}
+.feature-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 50px;
+}
+.card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+
+/* big-feature section */
+.big-feature{
+    padding: 30px var(--padding-inline-section) 0;
+}
+.big-feature-section{
+    gap: 30px;
+}
+.feature-img img{
+    width: 100%;
+}
+.big-feature h3{
+    margin-bottom: 10px;
+}
+.feature-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* example-section */
+.example{
+    padding: 50px var(--padding-inline-section);
+}
+.example-header{
+    flex-direction: column;
+    gap: 20px;
+}
+.example-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background: black;
+    transition: 0.2s ease-out;
+}
+.example-card:hover{
+    box-shadow: 0 0 10px rgb(151, 150, 150);
+}
+.example-card h3{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    color: white;
+}
+.example-area{
+    justify-content: space-between;
+    margin-block: 30px; ;
+}
+
+/* .example-card nth :nth-child() --- we can use it also */
+
+
+/* cta-section */
+
+.cta{
+    padding: 70px var(--padding-inline-section);
+    background-color: #ff8484;
+}
+.cta-container{
+    justify-content: center;
+    gap: 60px;
+    color: white;
+}
+.ctaleft{
+    max-width: 50vw;
+}
+.ctaleft h2{
+    margin-top: 20px;
+}
+.ctaleft h4{
+    margin-block: 20px;
+}
+.ctaleft p{
+    color: white;
+    margin-top: 20px;
+}
+.psb{
+    margin-top: 30px;
+}
+.ctaright img{
+    width: 530px;
+    animation: aka 2.5s ease-in 0s infinite alternate ;
+}
+@keyframes aka{
+    from{
+        width: 85%;
+    }
+    to{
+        width: 100%;
+    }
+}
+.ctaleft ul{
+    list-style: disc;
+}
+.ctaleft li{
+    margin-block: 8px;
+}
+.list{
+    gap: 35px;
+}
+.llist{
+    max-width: 50vw;
+}
+
+
+
+/* bta-section */
+
+.bta{
+    padding: 80px var(--padding-inline-section);
+}
+.bta-section{
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bta p{
+    color:var(--primary-write-color);
+    margin-top: 15px;
+}
+
+
+/* footer */
+footer{
+    padding: 60px var(--padding-inline-section);
+    background-color: #e6e5e5;
+}
+.footer-section{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.link-column{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+footer img{
+    width: 110px;
+}
+
+
+/* subfooter */
+.subfooter{
+    background-color:rgb(255 99 99);
+    padding: var(--padding-inline-section);
+}
+.subfooter-section{
+    justify-content: center;
+    gap: 30px;
+}
+.subfooter .hover-links:hover{
+    color: white;
+}
+
+
+
