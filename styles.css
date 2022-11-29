@@ -133,7 +133,11 @@ ul{
 }
 .right ul{
     justify-content: end;
-    gap: 40px;
+    gap: 35px;
+}
+.small-text{
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 
