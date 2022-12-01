@@ -14,10 +14,10 @@
         font-size: 1rem;
         font-weight: 400;
     }
-    .secondary-button{
+    .right .secondary-button{
         padding: 12px 16px;
     }
-    .primary-button{
+    .right .primary-button{
         padding: 12px 16px;
     }
 
