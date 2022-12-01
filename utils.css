@@ -1,0 +1,226 @@
+@media screen and (max-width:950px) {
+
+    /* navbar */
+    .main{
+        flex-direction: column;
+    }
+    .right{
+        flex-basis: 0;
+    }
+    .right ul{
+        gap: 17px;
+    }
+    .small-text{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .secondary-button{
+        padding: 12px 16px;
+    }
+    .primary-button{
+        padding: 12px 16px;
+    }
+
+    /* header */
+    .header-section{
+        flex-direction: column;
+    }
+    .hleft{
+        max-width: none;
+    }
+    .hright img{
+        animation: none;
+    }
+
+    /* companies-section */
+    .logo{
+        height: 35px;
+    }
+
+    /* feature-section */
+    .feature-area{
+        gap: 50px;
+    }
+    .card{
+        max-width: 45%;
+    }
+
+    .example-card{
+        width: 24%;
+        min-height: 250px;
+    }
+    .example-card h3{
+        font-size: 1.3rem;
+    }
+
+
+    /* cta */
+    .cta-container{
+        flex-direction: column;
+    }
+    .ctaright{
+        display: none;
+    }
+    .ctaleft{
+        max-width: none;
+    }
+
+}
+
+@media screen and (max-width:750px){
+
+    .logo{
+        height: 28px;
+    }
+    .hright img{
+        width: 380px;
+    }
+    .feature-area{
+        flex-wrap: nowrap;
+        gap: 60px;
+        flex-direction: column;
+    }
+    .card{
+        max-width: none;
+    }
+    .big-feature-section{
+        flex-direction: column;
+    }
+    .bfs{
+        flex-direction: column;
+    }
+    .feature-img img{
+        width: 70%;
+    }
+    .bfs .feature-img{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .bfs .feature-desc{
+        align-items: flex-end;
+    }
+    .bfs .feature-desc p{
+        text-align: end;
+    }
+
+    .example-header h2{
+        font-size: 1.7rem;
+    }
+    .example-card{
+        width: 24%;
+        min-height: 220px;
+    }
+    .example-card h3{
+        font-size: 1.1rem;
+    }
+
+    .footer-section{
+        gap: 15px;
+    }
+    footer img{
+        width: 80px;
+    }
+    .link-column{ 
+        gap: 12px;
+    }
+
+    .subfooter-section{
+        gap: 23px;
+    }
+
+
+}
+
+
+@media screen and (max-width:600px){
+
+
+    .right ul{
+        flex-direction: column;
+        gap: 18px;
+    }
+    .small-text{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+    .secondary-button{
+        padding: 12px 90px;
+    }
+    .primary-button{
+        padding: 12px 90px;
+    }
+
+
+    .hleft h1{
+        font-size: 2.5rem;
+    }
+    .hleft p{
+        font-size: 1.2rem;
+    }
+    .logo{
+        height: 23px;
+    }
+    .hright img{
+        width: 340px;
+    }
+
+    .feature-desc p{
+    font-size: 1.1rem;
+    }
+    .example-card{
+        width: 24%;
+        min-height: 150px;
+    }
+    .example-card h3{
+        font-size: 0.7rem;
+    }
+    .bta h2{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .bta p{
+        text-align: center;
+    }
+    footer{
+        padding: 60px 10px;
+    }
+    .footer-section{
+        gap: 10px;
+    }
+    footer .company-logo{
+        display: none;
+    }
+    .link-column{ 
+        gap: 10px;
+    }
+    .subfooter-section{
+        gap: 15px;
+    }
+
+
+}
+
+@media screen and (max-width:500px){
+    .logo{
+        height: 21px;
+    }
+    .hright img{
+        width: 320px;
+    }
+}
+
+
+@media screen and (max-width:450px){
+    .logo{
+        height: 19px;
+    }
+    .hright img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .logo{
+        height: 18px;
+    }
+}
