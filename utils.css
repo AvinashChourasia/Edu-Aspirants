@@ -143,10 +143,10 @@
         font-size: 1.1rem;
         font-weight: 600;
     }
-    .secondary-button{
+    .right .secondary-button{
         padding: 12px 90px;
     }
-    .primary-button{
+    .right .primary-button{
         padding: 12px 90px;
     }
 
