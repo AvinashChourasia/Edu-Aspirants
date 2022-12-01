@@ -227,6 +227,9 @@ header{
 .big-feature-section{
     gap: 30px;
 }
+.bfs{
+    flex-direction: row-reverse;
+}
 .feature-img img{
     width: 100%;
 }
